@@ -1,0 +1,19 @@
+{
+    "electricity": [
+        {
+            "cumulative": 18453,
+            "readingDate": "2017-07-31T00:00:00.000Z",
+            "unit": "kWh"
+        },
+        {
+            "cumulative": 18620,
+            "readingDate": "2017-08-31T00:00:00.000Z",
+            "unit": "kWh"
+        },
+        {
+            "cumulative": 18682,
+            "readingDate": "2017-09-10T00:00:00.000Z",
+            "unit": "kWh"
+        }
+    ]
+}
