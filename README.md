@@ -35,4 +35,4 @@ yarn run coverage
 ```
 
 ### 🚀 Postman
-Once the API is up, import the `api.postman_collection.json` file in Postman to test the APIs.
+Once the API is up, import the [`api.postman_collection.json`](https://raw.githubusercontent.com/paambaati/reading-between-the-lines/master/api.postman_collection.json) file in Postman to test the APIs.
