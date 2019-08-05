@@ -115,6 +115,13 @@ export default class Readings {
     const monthEnd = endOfMonth(currentReading.readingDate);
 
     // Linear interpolation formula from https://wikihow.com/Interpolate
+    /**
+     * READING        :  last                current    end-of-month       next
+     * TIMELINE       : +----------------------+------------+----------------+
+     * X (DATE)       :  0                     x1           x               x2
+     * Y (CUMULATIVE) :                        y1           y?              y2
+     */
+
     const x1 = differenceInDays(
       currentReading.readingDate,
       lastReading.readingDate
