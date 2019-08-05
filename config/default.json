@@ -1,0 +1,9 @@
+{
+    "api": {
+        "port": 3000
+    },
+    "database": {
+        "file": null,
+        "migrations": "./data/migrations"
+    }
+}

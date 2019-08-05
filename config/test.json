@@ -1,0 +1,6 @@
+{
+    "database": {
+        "file": null,
+        "migrations": "./data/migrations"
+    }
+}
