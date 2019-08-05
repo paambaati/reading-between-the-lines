@@ -1,6 +1,6 @@
 # reading-between-the-lines
 
-[![CI Status](https://travis-ci.org/paambaati/reading-between-the-lines.svg?branch=master)](https://travis-ci.org/paambaati/reading-between-the-lines) [![Test Coverage](https://api.codeclimate.com/v1/badges/fb77b0efca00f8789f5a/test_coverage)](https://codeclimate.com/github/paambaati/websight/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/fb77b0efca00f8789f5a/maintainability)](https://codeclimate.com/github/paambaati/websight/maintainability) [![WTFPL License](https://img.shields.io/badge/License-WTFPL-blue.svg)](LICENSE)
+[![CI Status](https://travis-ci.org/paambaati/reading-between-the-lines.svg?branch=master)](https://travis-ci.org/paambaati/reading-between-the-lines) [![Test Coverage](https://api.codeclimate.com/v1/badges/fb77b0efca00f8789f5a/test_coverage)](https://codeclimate.com/github/paambaati/reading-between-the-lines/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/fb77b0efca00f8789f5a/maintainability)](https://codeclimate.com/github/paambaati/reading-between-the-lines/maintainability) [![WTFPL License](https://img.shields.io/badge/License-WTFPL-blue.svg)](LICENSE)
 
 A simple API server that lets users access and add meter readings.
 
