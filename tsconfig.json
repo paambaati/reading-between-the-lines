@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib/",
+        "rootDir": "./src",
+        "inlineSourceMap": false,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "alwaysStrict": false,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitUseStrict": true,
+        "preserveConstEnums": true,
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "pretty": true,
+        "lib": [
+            "es2018",
+            "es2017",
+            "es2015"
+        ],
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
