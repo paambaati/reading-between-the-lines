@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "c85e68d6-86e3-4876-9c99-fdebde58e0ca",
+		"name": "reading-between-the-lines API",
+		"description": "APIs used in the reading-between-the-lines energy readings API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET readings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/readings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"readings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT readings (invalid)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cumulative\": 99999,\n    \"readingDate\": \"2019-08-04T00:00:00.000Z\",\n    \"unit\": \"kWhXX\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/readings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"readings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT readings (valid)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cumulative\": 20900,\n    \"readingDate\": \"2018-05-27T00:00:00.000Z\",\n    \"unit\": \"kWh\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/readings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"readings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
