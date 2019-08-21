@@ -1,4 +1,4 @@
-import { parse, endOfMonth, differenceInDays } from 'date-fns';
+import { parseISO, endOfMonth, differenceInDays } from 'date-fns';
 import Database from '../utils/database';
 
 // Initializers.
@@ -112,7 +112,7 @@ export default class Readings {
   ): Reading {
     if (!lastReading || !nextReading) return currentReading; // Do not interpolate on the edges.
 
-    const monthEnd = endOfMonth(currentReading.readingDate);
+    const monthEnd = endOfMonth(parseISO(currentReading.readingDate));
 
     // Linear interpolation formula from https://wikihow.com/Interpolate
     /**
@@ -123,18 +123,18 @@ export default class Readings {
      */
 
     const x1 = differenceInDays(
-      currentReading.readingDate,
-      lastReading.readingDate
+      parseISO(currentReading.readingDate),
+      parseISO(lastReading.readingDate)
     );
     const x2 = differenceInDays(
-      nextReading.readingDate,
-      lastReading.readingDate
+      parseISO(nextReading.readingDate),
+      parseISO(lastReading.readingDate)
     );
 
     const y1 = currentReading.cumulative;
     const y2 = nextReading.cumulative;
 
-    const x = differenceInDays(monthEnd, lastReading.readingDate);
+    const x = differenceInDays(monthEnd, parseISO(lastReading.readingDate));
     const y = y1 + ((x - x1) / (x2 - x1)) * (y2 - y1);
 
     const updatedReading = { ...currentReading }; // Make a copy so we don't mutate the original reading.
@@ -169,7 +169,7 @@ export default class Readings {
     let readingWithUsage: ReadingWithUsage;
     const originalReadings = Readings.getReadingsFromDB();
     originalReadings.forEach((reading, index) => {
-      const dateObject = parse(reading.readingDate);
+      const dateObject = parseISO(reading.readingDate);
       const daysToMonthEnd = differenceInDays(
         endOfMonth(dateObject),
         dateObject
