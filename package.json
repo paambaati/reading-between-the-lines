@@ -34,6 +34,7 @@
     "coverage": "rm -rf ./node_modules/.cache && rm -rf coverage/ && rm -rf .nyc_output/ && NODE_ENV=test LOG_LEVEL=silent nyc tape -r ts-node/register/transpile-only test/**/*.test.ts  test/*.test.ts",
     "debug": "SUPPRESS_SUPPORT=1 $NODE_OPTIONS nodemon",
     "format": "prettier --write src/*.ts src/**/*.ts test/*.ts test/**/*.ts",
+    "format:check": "prettier --check src/*.ts src/**/*.ts test/*.ts test/**/*.ts",
     "prepublishOnly": "rm -rf lib/ && yarn build"
   },
   "dependencies": {
