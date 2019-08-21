@@ -37,7 +37,7 @@
     "prepublishOnly": "rm -rf lib/ && yarn build"
   },
   "dependencies": {
-    "better-sqlite3-helper": "2.1.0",
+    "better-sqlite3-helper": "2.1.1",
     "config": "3.2.2",
     "date-fns": "1.30.1",
     "koa": "2.7.0",
