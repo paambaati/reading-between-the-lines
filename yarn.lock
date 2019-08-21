@@ -200,12 +200,18 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/pino@5.8.8":
-  version "5.8.8"
-  resolved "https://registry.yarnpkg.com/@types/pino/-/pino-5.8.8.tgz#930eb30f1f1eb76b97792647477aab59e5852574"
-  integrity sha512-SxAdLtEpPkVUdnI3iCUjyFC7WVLFiebyzqypvkuJVo7dyK6BPuQ4lTOuZRKpbEdgG386l5HgfqpymL3oWLOUXg==
+"@types/pino-std-serializers@*":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@types/pino-std-serializers/-/pino-std-serializers-2.4.0.tgz#8cad99175cb79c2448f7455a2d32fb3fde29579c"
+  integrity sha512-eAdu+NW1IkCdmp85SnhyKha+OOREQMT9lXaoICQxa7bhSauRiLzu3WSNt9Mf2piuJvWeXF/G0hGWHr63xNpIRA==
+
+"@types/pino@5.8.9":
+  version "5.8.9"
+  resolved "https://registry.yarnpkg.com/@types/pino/-/pino-5.8.9.tgz#17d8e2a7f2f6d9683ddef14fc8a172a2a306ca72"
+  integrity sha512-ybOTk+Ax54aKKHy4ZMDAVYBzuRhHn5NTGVyFTdH6vDrjTj3sQnP+TAlIJaKKbKu9J8NioRrj1kUGKDtvPPesmA==
   dependencies:
     "@types/node" "*"
+    "@types/pino-std-serializers" "*"
     "@types/sonic-boom" "*"
 
 "@types/range-parser@*":
@@ -420,16 +426,16 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-better-sqlite3-helper@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/better-sqlite3-helper/-/better-sqlite3-helper-2.1.0.tgz#d8075fc2c3558ecd2aede88298b0daae58bc9739"
-  integrity sha512-RMDxpQihe31pam4C53Dx8kmzJf3nymr1m/OC8S1TJVSjTEQ/JMKQJ4R34lM7oyvx7vfI5OBoB82dQJcXAPG/dg==
+better-sqlite3-helper@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/better-sqlite3-helper/-/better-sqlite3-helper-2.1.1.tgz#947d460da2c329e300b716993a1f7b435d2d378e"
+  integrity sha512-sNMSgIrfu0aLIHL5yEwOoJoBIiiKXVKR4swbh8zTvUdUj8L4o1xgkBr2BGWFdW+JNMeLSd+4HI/weezXA3IAkQ==
   dependencies:
     app-root-path "^2.2.1"
-    better-sqlite3 "^5.4.1"
+    better-sqlite3 "^5.4.2"
     mkdirp "^0.5.1"
 
-better-sqlite3@^5.4.1:
+better-sqlite3@^5.4.2:
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-5.4.2.tgz#8eaa7bc5e66c67a4665d45969363cfedbec7ccc1"
   integrity sha512-BtRGasolxvhCwgsak876fBZiXMn0YNOfvy9RYXT0RO3G8RkL9z45qXTuavuMXUL6bx4cxdxP1k4pC0xOfVKwvg==
@@ -2602,10 +2608,10 @@ pino-std-serializers@^2.3.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.4.2.tgz#cb5e3e58c358b26f88969d7e619ae54bdfcc1ae1"
   integrity sha512-WaL504dO8eGs+vrK+j4BuQQq6GLKeCCcHaMB2ItygzVURcL1CycwNEUHTD/lHFHs/NL5qAz2UKrjYWXKSf4aMQ==
 
-pino@5.13.1:
-  version "5.13.1"
-  resolved "https://registry.yarnpkg.com/pino/-/pino-5.13.1.tgz#583eb92be0ccbaa2a98ab2842817a1fa103cb26e"
-  integrity sha512-IxusG28L0g50uuf21kZELypdFOeNrJ/kRhktdi7LtdZQWCxLliMxG5iOrGUQ/ng7MiJ4XqXi/hfyXwZeKc1MxA==
+pino@5.13.2:
+  version "5.13.2"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-5.13.2.tgz#773416c9764634276e7b2ae021357679ff7b5634"
+  integrity sha512-WwOSCy36/gWhinsqWqAnuwIi2WtcH+jvoyeLm3bjUALIrzWIst0AovQjK4jVvSN2l64KFPfi3gd2fjsTovjdLQ==
   dependencies:
     fast-redact "^1.4.4"
     fast-safe-stringify "^2.0.6"
