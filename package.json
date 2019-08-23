@@ -40,7 +40,7 @@
   "dependencies": {
     "better-sqlite3-helper": "2.1.1",
     "config": "3.2.2",
-    "date-fns": "2.0.0",
+    "date-fns": "2.0.1",
     "koa": "2.8.1",
     "koa-json-body": "5.3.0",
     "koa-json-schema": "3.0.0",
