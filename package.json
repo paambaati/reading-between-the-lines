@@ -51,7 +51,7 @@
     "@types/config": "0.0.34",
     "@types/koa": "2.0.49",
     "@types/nock": "10.0.3",
-    "@types/node": "8.x",
+    "@types/node": "12.x",
     "@types/pino": "5.8.9",
     "@types/supertest": "2.0.8",
     "@types/tape": "4.2.33",
